@@ -1,0 +1,15 @@
+<h2>New Product</h2>
+<form method='post' action='/products'>
+  <label>Name</label> <br>
+  <input name='product[name]' type='text' size='30' />
+
+  <br />
+  <label>Price</label><br>
+  <input name='product[price]' type='number' />
+
+  <br />
+  <input type='submit' value='Create Product' />
+</form>
+
+</br>
+<%= link_to "Back", products_path %>

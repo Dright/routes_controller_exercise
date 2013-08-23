@@ -5,7 +5,10 @@
   <% products.each do |product| %>
     <li>
       Products Name: "<%= product.name %>" costs $<%= product.price %>
-      Sold by '<%= product.user.name %>'
+      Sold by <%= product.user.name if product.user %>
     </li>
   <% end %>
 </ul>
+
+<br />
+<%= link_to "New Product", "/products/new" %>
